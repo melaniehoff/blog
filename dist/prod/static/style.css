@@ -21,7 +21,7 @@ body {
 a:link { text-decoration: none; color: #000; }
 a:active { text-decoration: none; color: #00cc00; }
 a:visited { text-decoration: none; color: #999; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: line-through; }
 a img { border: none; }
 
 /* general styles */
