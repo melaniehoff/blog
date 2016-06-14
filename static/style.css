@@ -20,7 +20,7 @@ body {
 /* you can customize links further down the page too */
 a:link { text-decoration: none; color: #000; }
 a:active { text-decoration: none; color: #00cc00; }
-a:visited { text-decoration: none; color: #999; }
+a:visited { text-decoration: underline overline line-through; color: #999; }
 a:hover { text-decoration: line-through; }
 a img { border: none; }
 
@@ -80,7 +80,7 @@ li.active a:visited, li a.active, li span.active, #index ul.section li.active a:
 #index a:link {  } 
 #index a:hover {  } 
 #index a:active {  } 
-#index a:visited {  }
+#index a:visited {  text-decoration: underline overline line-through; }
 
 /* links styles only for the #exhibit region */
 #exhibit a:link {  } 
@@ -93,4 +93,4 @@ li.active a:visited, li a.active, li span.active, #index ul.section li.active a:
 
 /* this is where you pad them separately */
 #index .container {  }
-#exhibit .container {  }
+#exhibit .container { width: 1000px; }
