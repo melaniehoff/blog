@@ -51,7 +51,9 @@ def build_site(pages_dir, output_dir, template_vars, debug):
     template_env = jinja2.Environment( loader=template_loader)
 
     for dirpath, _, files in os.walk(pages_dir):
+        files = filter(lambda file: file not in ['.DS_Store'], files)
         for page in files:
+            # print '++ attempting to build: {}'.format(page)
             relative_dirpath = os.path.relpath(dirpath, pages_dir)
             relative_path = os.path.join(relative_dirpath, page)
             template_path = 'pages/' + relative_path
