@@ -99,13 +99,13 @@ var baseurl = 'http://melaniehoff.github.io';
 </head>
 <body style="font-family: Helvetica, &#39;Nimbus Sans L&#39;, &#39;Liberation Sans&#39;, Arial, sans-serif; background:white; color:black; padding:14px 28px 0 28px">
 <div style="text-align:center; font-size:15px; padding: 14px 0 28px 0;"><b style="font-size:20px"></b>  <a href="http://melanie-hoff.com/"></a></div>
-<div style="width:628px; font-size:36px; margin-left:auto; margin-right:auto">
-<div id="dotcom1" style="text-align: center; height: 250px; width: 700px; line-height: 250px; color: white; float: center; margin-bottom: 28px; font-family: Arial, Helvetica, sans-serif; background: black;">_</div>
-<div id="dotcom3" style="text-align: center; height: 250px; width: 700px; line-height: 250px; color: white; float: center; font-family: Trebuchet, &#39;Trebuchet MS&#39;, sans-serif; background: black;">___</div>
+<div style="width:900px; font-size:36px; margin-left:auto; margin-right:auto">
+<div id="dotcom1" style="text-align: center; height: 150px; width: 900px; line-height: 120px; color: white; float: left; margin-bottom: 28px; font-family: Arial, Helvetica, sans-serif; background: black;">_</div>
+<div id="dotcom3" style="text-align: center; height: 150px; width: 900px; line-height: 120px; color: white; float: left; font-family: Trebuchet, &#39;Trebuchet MS&#39;, sans-serif; background: black;">___</div>
 <div style="height:28px; clear:both"></div>
-<div id="dotcom4" style="text-align: center; height: 250px; width: 700px; line-height: 250px; color: white; float: center; margin-bottom: 28px; font-family: &#39;Lucida Sans Unicode&#39;, &#39;Lucida Grande&#39;, sans-serif; background: black;">____</div>
+<div id="dotcom4" style="text-align: center; height: 150px; width: 900px; line-height: 120px; color: white; float: left; margin-bottom: 28px; font-family: &#39;Lucida Sans Unicode&#39;, &#39;Lucida Grande&#39;, sans-serif; background: black;">____</div>
 <div 
-id="dotcom2" style="text-align: center; height: 250px; width: 700px; line-height: 250px; color: white; float: center; margin-bottom: 28px; font-family: Trebuchet, &#39;Trebuchet MS&#39;, sans-serif; background: black;">__</div>
+id="dotcom2" style="text-align: center; height: 150px; width: 900px; line-height: 120px; color: white; float: left; margin-bottom: 28px; font-family: Trebuchet, &#39;Trebuchet MS&#39;, sans-serif; background: black;">__</div>
 </div>
 
 <script type="text/javascript">
@@ -139,6 +139,13 @@ var panel = 1, names = [
     // 'Trebuchet, Trebuchet MS, sans-serif',
     // 'Verdana, Geneva, sans-serif'
     ]
+
+    var seed = 1;
+function random() {
+    var x = Math.sin(seed++) * 10000;
+    return x - Math.floor(x);
+}
+
 function rand_index(len) {
     return Math.floor(Math.random() * len);
 }
