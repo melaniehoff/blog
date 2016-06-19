@@ -14569,17 +14569,17 @@ p5.prototype.createCanvas = function(w, h, renderer) {
   }
 
   if(r === constants.WEBGL){
-    c = document.getElementById('exhibit');
+    c = document.getElementById('defaultCanvas');
     if(c){ //if defaultCanvas already exists
       c.parentNode.removeChild(c); //replace the existing defaultCanvas
     }
     c = document.createElement('canvas');
-    c.id = 'exhibit';
+    c.id = 'defaultCanvas';
   }
   else {
     if (isDefault) {
       c = document.createElement('canvas');
-      c.id = 'exhibit';
+      c.id = 'defaultCanvas';
     } else { // resize the default canvas if new one is created
       c = this.canvas;
     }
