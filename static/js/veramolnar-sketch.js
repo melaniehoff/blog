@@ -19,7 +19,7 @@ function mousePressed() {
 }
 
 function draw() {
-   background(0);
+   background(256);
      randomSeed(0);
   for (var i = 0; i < particleList.length; i++) {
     particleList[i].display();
