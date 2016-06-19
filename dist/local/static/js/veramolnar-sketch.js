@@ -1,7 +1,8 @@
 var particleList = [];
 
 function setup() {
-  createCanvas(800, 800);
+  var myCanvas = createCanvas(800, 800);
+  myCanvas.parent('p5container');
   for (var i = 0; i < 6; i++) {
     for (var j = 0; j < 6; j++){
      particleList.push(new Particle(i*125,j*125));
