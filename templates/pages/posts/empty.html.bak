@@ -1,5 +1,0 @@
-{% extends "layouts/page.html" %}
-{% block content %}
-
-
-{% endblock %}
